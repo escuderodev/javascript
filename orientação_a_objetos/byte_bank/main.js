@@ -7,27 +7,33 @@ const primeiroCliente = new Cliente();
 primeiroCliente.nome = "Eduardo Escudero";
 primeiroCliente.cpf = "33188944318";
 
-const segundoCliente = new Cliente();
-segundoCliente.nome = "Carol Tobias";
-segundoCliente.cpf = "33123443234";
+const terceiroCliente = new Cliente('Eduardo Escudero', '33188942818');
+console.log(`Cliente: ${terceiroCliente.nome} CPF: ${terceiroCliente.cpf}`);
+
+terceiroCliente.cpf = '33212333454';
+console.log(terceiroCliente.cpf);
+
+// const segundoCliente = new Cliente();
+// segundoCliente.nome = "Carol Tobias";
+// segundoCliente.cpf = "33123443234";
 
 // console.log(`Cliente: ${primeiroCliente.nome} CPF: ${primeiroCliente.cpf}`);
 
-const primeiraConta = new ContaCorrente();
-primeiraConta.agencia = '1012';
-primeiraConta.numero = '850408';
-primeiraConta.titular = primeiroCliente;
-primeiraConta.deposita(1000);
+// const primeiraConta = new ContaCorrente();
+// primeiraConta.agencia = '1012';
+// primeiraConta.numero = '850408';
+// primeiraConta.titular = primeiroCliente;
+// primeiraConta.deposita(1000);
 
-const segundaConta = new ContaCorrente();
-segundaConta.agencia = '8541';
-segundaConta.numero = '584712';
-segundaConta.titular = segundoCliente;
-segundaConta.deposita(1000);
+// const segundaConta = new ContaCorrente();
+// segundaConta.agencia = '8541';
+// segundaConta.numero = '584712';
+// segundaConta.titular = segundoCliente;
+// segundaConta.deposita(1000);
 
-console.log(`Primeira Conta - Ag.: ${primeiraConta.agencia} Nº: ${primeiraConta.numero} Titular: ${primeiraConta.titular.nome} Saldo R$ ${primeiraConta.saldo}`);
+// console.log(`Primeira Conta - Ag.: ${primeiraConta.agencia} Nº: ${primeiraConta.numero} Titular: ${primeiraConta.titular.nome} Saldo R$ ${primeiraConta.saldo}`);
 
-console.log(primeiraConta.titular.cpf);
+// console.log(primeiraConta.titular.cpf);
 
 // console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
 // console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
