@@ -3,18 +3,18 @@ import { Cliente } from "./models/Cliente.js";
 import { ContaCorrente } from "./models/ContaCorrente.js";
 
 // utilizando as clases importadas
-const primeiroCliente = new Cliente();
-primeiroCliente.nome = "Eduardo Escudero";
-primeiroCliente.cpf = "33188944318";
+// const primeiroCliente = new Cliente();
+// primeiroCliente.nome = "Eduardo Escudero";
+// primeiroCliente.cpf = "33188944318";
 
 const terceiroCliente = new Cliente('Eduardo Escudero', '33188942818');
 console.log(`Cliente: ${terceiroCliente.nome} CPF: ${terceiroCliente.cpf}`);
 
-terceiroCliente.cpf = '33212333454';
-console.log(terceiroCliente.cpf);
+// terceiroCliente.cpf = '33212333454';
+// console.log(terceiroCliente.cpf);
 
-const novaConta = new ContaCorrente('1012', '850408', terceiroCliente);
-console.log(`Nova Conta = Ag: ${novaConta.agencia} - Número: ${novaConta.numero} - Titular: ${novaConta.titular.nome}`);
+// const novaConta = new ContaCorrente('1012', '850408', terceiroCliente);
+// console.log(`Nova Conta = Ag: ${novaConta.agencia} - Número: ${novaConta.numero} - Titular: ${novaConta.titular.nome}`);
 
 // const segundoCliente = new Cliente();
 // segundoCliente.nome = "Carol Tobias";
@@ -53,3 +53,14 @@ console.log(`Nova Conta = Ag: ${novaConta.agencia} - Número: ${novaConta.numero
 // console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
 
 // primeiraConta.deposita(-100);
+
+const conta1 = new ContaCorrente(1012, 850408,terceiroCliente); 
+console.log(ContaCorrente.numeroDeContas);
+const conta2 = new ContaCorrente(1012, 222222,terceiroCliente); 
+console.log(ContaCorrente.numeroDeContas);
+const conta3 = new ContaCorrente(1012, 333333,terceiroCliente); 
+console.log(ContaCorrente.numeroDeContas);
+const conta4 = new ContaCorrente(1012, 444444,terceiroCliente); 
+console.log(ContaCorrente.numeroDeContas);
+const conta5 = new ContaCorrente(1012, 555555,terceiroCliente); 
+console.log(ContaCorrente.numeroDeContas);

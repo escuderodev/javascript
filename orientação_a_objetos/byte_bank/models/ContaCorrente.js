@@ -5,11 +5,13 @@ export class ContaCorrente {
     _numero;
     _titular;
     _saldo = 0;
+    static numeroDeContas = 0;
 
     constructor(agencia, numero, titular) {
         this._agencia = agencia;
         this._numero = numero;
         this.titular = titular;
+        ContaCorrente.numeroDeContas += 1;
     }
 
     // métodos de regra de negócio
