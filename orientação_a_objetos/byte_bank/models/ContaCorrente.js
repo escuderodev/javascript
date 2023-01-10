@@ -1,6 +1,7 @@
 export class ContaCorrente {
     agencia;
     numero;
+    titular;
     _saldo = 0;
 
     deposita(valor) {
