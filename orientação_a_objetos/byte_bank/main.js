@@ -17,15 +17,17 @@ const primeiraConta = new ContaCorrente();
 primeiraConta.agencia = '1012';
 primeiraConta.numero = '850408';
 primeiraConta.titular = primeiroCliente;
-// primeiraConta.deposita(1000);
+primeiraConta.deposita(1000);
 
 const segundaConta = new ContaCorrente();
 segundaConta.agencia = '8541';
 segundaConta.numero = '584712';
 segundaConta.titular = segundoCliente;
-// segundaConta.deposita(1000);
+segundaConta.deposita(1000);
 
 console.log(`Primeira Conta - Ag.: ${primeiraConta.agencia} Nº: ${primeiraConta.numero} Titular: ${primeiraConta.titular.nome} Saldo R$ ${primeiraConta.saldo}`);
+
+console.log(primeiraConta.titular.cpf);
 
 // console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
 // console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
