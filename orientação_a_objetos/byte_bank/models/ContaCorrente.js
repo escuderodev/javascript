@@ -6,6 +6,12 @@ export class ContaCorrente {
     _titular;
     _saldo = 0;
 
+    constructor(agencia, numero, titular) {
+        this._agencia = agencia;
+        this._numero = numero;
+        this.titular = titular;
+    }
+
     // métodos de regra de negócio
     deposita(valor) {
         if(valor > 0) {

@@ -13,6 +13,9 @@ console.log(`Cliente: ${terceiroCliente.nome} CPF: ${terceiroCliente.cpf}`);
 terceiroCliente.cpf = '33212333454';
 console.log(terceiroCliente.cpf);
 
+const novaConta = new ContaCorrente('1012', '850408', terceiroCliente);
+console.log(`Nova Conta = Ag: ${novaConta.agencia} - Número: ${novaConta.numero} - Titular: ${novaConta.titular.nome}`);
+
 // const segundoCliente = new Cliente();
 // segundoCliente.nome = "Carol Tobias";
 // segundoCliente.cpf = "33123443234";
