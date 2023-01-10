@@ -1,5 +1,4 @@
-class Cliente{
-    nome; 
+class Cliente {
+    nome;
     cpf;
 };
-
