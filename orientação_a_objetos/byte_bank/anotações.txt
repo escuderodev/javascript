@@ -1,0 +1,14 @@
+Comandos do Node.js para iniciar um projeto
+
+- npm init = inicia as configurações do projeto;
+- definir nome do pacote;
+- confirmar a versão;
+- inserir uma descrição;
+- defina o arquivo de execução (main.js);
+- execute ou não um teste;
+- expecifique ou não um repositório git;
+- insira ou não keywords;
+- insira o nome do author;
+- escolha o tipo de licença;
+- confirme a criação do projeto;
+    um arquivo package.json com as cofigurações do projeto será criado;
