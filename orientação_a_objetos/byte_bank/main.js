@@ -1,15 +1,13 @@
 // importando classes
-import { Cliente } from "./Cliente"
-import { ContaCorrente } from "./ContaCorrente"
+import { Cliente } from "./models/Cliente.js";
+import { ContaCorrente } from "./models/ContaCorrente.js";
 
-//utilizando as clases importadas
-// const primeiroCliente = new Cliente();
-// primeiroCliente.nome = "Eduardo Escudero";
-// primeiroCliente.cpf = "33188944318";
+// utilizando as clases importadas
+const primeiroCliente = new Cliente();
+primeiroCliente.nome = "Eduardo Escudero";
+primeiroCliente.cpf = "33188944318";
 
-// console.log(`Cliente: ${primeiroCliente.nome} CPF: ${primeiroCliente.cpf}`);
-
-
+console.log(`Cliente: ${primeiroCliente.nome} CPF: ${primeiroCliente.cpf}`);
 
 const primeiraConta = new ContaCorrente();
 primeiraConta.agencia = '1012';
