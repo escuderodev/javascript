@@ -1,7 +1,9 @@
+import { Cliente } from "./Cliente.js";
+
 export class ContaCorrente {
-    agencia;
-    numero;
-    titular;
+    _agencia;
+    _numero;
+    _titular;
     _saldo = 0;
 
     deposita(valor) {
@@ -32,16 +34,33 @@ export class ContaCorrente {
         };
     };
 
-    getAgencia() {
-        return this.agencia;
+    get agencia() {
+        return this._agencia;
     };
 
-    getNumero() {
-        return this.numero;
+    set agencia(agencia) {
+        this._agencia = agencia;
     };
 
-    getsaldo() {
+    get numero() {
+        return this._numero;
+    };
+
+    set numero(numero) {
+        this._numero = numero;
+    };
+
+    get saldo() {
         return this._saldo.toFixed(2);
     };
 
+    get titular() {
+        return this._titular;
+    };
+
+    set titular(novoCliente) {
+        if (novoCliente instanceof Cliente) {
+            this._titular = novoCliente;
+        }
+    };
 };
