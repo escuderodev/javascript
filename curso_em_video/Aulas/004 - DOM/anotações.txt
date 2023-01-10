@@ -1,0 +1,19 @@
+Manipulando o DOM
+
+podemos selecionar elementos em nosso DOM de 5 maneiras:
+
+- por Marca
+getElementsByTagName()
+
+- por ID 
+getElementByTagId()
+
+- por Nome 
+getElementsByName()
+
+- por Classe
+getElementsByClassName('resultado')
+
+- por Seletor * recomendado
+querySelector()
+querySelectorAll()

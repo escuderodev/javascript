@@ -1,0 +1,10 @@
+Eventos do DOM
+
+- mouseenter = quando o crusor do mouse entra na área desejada;
+- mousemove = movendo o mouse dentro da área desejada;
+- mousedown = click pressionado do mouse na area desejada;
+- mouseup = soltar o click do mouse;
+- click = click padrão do mouse;
+- mouseout = mover o cursor do mouse para fora da área desejada;
+
+reference = DOM event list

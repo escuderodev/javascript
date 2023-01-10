@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    background-image: linear-gradient(45deg, #000, #ff0000);
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.2rem 2rem;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+input {
+    padding: .3rem;
+    font-weight: bold;
+}
+
+#botao {
+    padding: .5rem;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #be0a0a;
+    color: #fff;
+}
+
+#botao:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .5s all;
+}
+
+.creditos, a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+a {
+    padding: 0;
+}
