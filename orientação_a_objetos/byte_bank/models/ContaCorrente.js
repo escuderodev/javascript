@@ -6,6 +6,7 @@ export class ContaCorrente {
     _titular;
     _saldo = 0;
 
+    // métodos de regra de negócio
     deposita(valor) {
         if(valor > 0) {
             this._saldo += valor;
@@ -34,6 +35,7 @@ export class ContaCorrente {
         };
     };
 
+    // getters e setters
     get agencia() {
         return this._agencia;
     };
