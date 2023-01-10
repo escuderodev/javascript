@@ -29,18 +29,18 @@ console.log(`Primeira Conta - Ag.: ${primeiraConta.agencia} Nº: ${primeiraConta
 
 console.log(`Segunda Conta - Ag.: ${segundaConta.agencia} Nº: ${segundaConta.numero} Titular: ${segundaConta.titular.nome} Saldo R$ ${segundaConta.getsaldo()}`);
 
-// console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
-// console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
+console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
+console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
 
-// primeiraConta.saca(50);
-// segundaConta.deposita(50);
+primeiraConta.saca(50);
+segundaConta.deposita(50);
 
-// console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
-// console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
+console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
+console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
 
-// segundaConta.transfere(50, primeiraConta);
+segundaConta.transfere(50, primeiraConta);
 
-// console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
-// console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
+console.log(`Primeira Conta R$: ${primeiraConta.getsaldo()}`);
+console.log(`Segunda Conta R$: ${segundaConta.getsaldo()}\n`);
 
-// primeiraConta.deposita(-100);
+primeiraConta.deposita(-100);
