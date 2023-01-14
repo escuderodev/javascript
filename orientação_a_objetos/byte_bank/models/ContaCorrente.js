@@ -11,6 +11,7 @@ export class ContaCorrente {
         this._agencia = agencia;
         this._numero = numero;
         this.titular = titular;
+        this._saldo = 0;
         ContaCorrente.numeroDeContas += 1;
     }
 
