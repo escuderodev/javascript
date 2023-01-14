@@ -40,6 +40,7 @@ function validaDados() {
 
     if(contaCorrente.saca(inputValor) > 0) {
         resultado.innerHTML = `Saque de R$ ${contaCorrente.saca(inputValor.toFixed(2))} realizado com sucesso!`;
+        console.log(`Console: ${contaCorrente.saca(inputValor)}`);
     } else {
         resultado.innerHTML = `Saldo insuficiente!`;
     }
