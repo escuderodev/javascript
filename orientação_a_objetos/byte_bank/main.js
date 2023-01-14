@@ -9,9 +9,9 @@ class Conta {
     saca(valor) {
         if (this._saldo >= valor) {
             this._saldo -= valor;
-            console.log(`Saque de R$ ${valor.toFixed(2)} realizado com sucesso!`);
+            return valor;
         } else {
-            console.log(`Saque não realizado. Saldo insuficiente!`);
+            return 0;
         };
 
     }
@@ -37,5 +37,10 @@ function validaDados() {
     console.log(inputAgencia, inputNumero, inputValor);
 
     const resultado = document.getElementById('resultado');
-    contaCorrente.saca(inputValor);
+
+    if(contaCorrente.saca(inputValor) > 0) {
+        resultado.innerHTML = `Saque de R$ ${contaCorrente.saca(inputValor.toFixed(2))} realizado com sucesso!`;
+    } else {
+        resultado.innerHTML = `Saldo insuficiente!`;
+    }
 }
