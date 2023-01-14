@@ -11,4 +11,16 @@ export class ContaCorrente extends Conta {
 
     // métodos de regra de negócio
 
+    saca(valor) {
+        let taxa = 5.00;
+        const valorDesejado = valor + taxa;
+
+        if(this._saldo >= valorDesejado) {
+            console.log(`Saque de ${valor.toFixed(2)} realizado com sucesso!`);
+            this._saldo -= valor;
+        } else {
+            console.log('Saldo insuficiente!');
+        };
+    }
+
 };
