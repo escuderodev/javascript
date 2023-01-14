@@ -1,21 +1,31 @@
-// realizando importações
+// // realizando importações
 import { Cliente } from "./models/Cliente.js"
 import { ContaCorrente } from "./models/ContaCorrente.js"
-import { ContaPoupanca } from "./models/ContaPoupanca.js";
 
-const cliente1 = new Cliente("Eduardo", 33188942818);
+const form = document.getElementById('form');
 
-const contaCorrente = new ContaCorrente(1012, 850408, cliente1, 0)
-const contaPoupanca = new ContaPoupanca(1022, 434456, cliente1, 50);
+const cliente = new Cliente('Eduardo Escudero', 33188942818);
+const contaCorrente = new ContaCorrente(1012, 850408, cliente, 1000);
 
-contaCorrente.deposita(1000);
-contaPoupanca.deposita(950);
 
-console.log(`Conta Corrente - Saldo R$: ${contaCorrente.saldo}`);
-console.log(`Conta Poupanca - Saldo R$: ${contaPoupanca.saldo}`);
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-contaCorrente.saca(100);
-contaPoupanca.saca(100);
+    const inputAgencia = document.getElementById('agencia').value; 
+    const inputNumero = document.getElementById('numero').value;
+    const inputValor = parseFloat(document.getElementById('valor_desejado').value);
 
-console.log(`Conta Corrente - Saldo R$: ${contaCorrente.saldo}`);
-console.log(`Conta Poupanca - Saldo R$: ${contaPoupanca.saldo}`);
+    if(inputAgencia == contaCorrente.agencia && inputNumero == contaCorrente.numero) {
+        // let valorSacado = contaCorrente.saca(inputValor);
+        console.log(`Saque de R$ ${valorSacado} realizado com sucesso!`);
+    } else {
+        console.log('Conta inválida!')
+    }
+
+    contaCorrente.saca();
+
+    contaCorrente.saca(inputValor);
+})
+
+// funções auxiliares
+
