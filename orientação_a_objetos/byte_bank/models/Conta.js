@@ -1,12 +1,16 @@
+import { Cliente } from "./Cliente.js";
+
 export class Conta{
-    constructor(saldoInicial, cliente, agencia) {
-        this._saldo = saldoInicial;
-        this._cliente = cliente;
+    constructor(agencia, numero, titular, saldoInicial) {
         this._agencia = agencia;
+        this._numero = numero;
+        this.titular = titular;
+        this._saldo = saldoInicial;
+        this._saldo = 0;
     }
 
-     // métodos de regra de negócio
-     deposita(valor) {
+    // métodos de regra de negócio
+    deposita(valor) {
         if(valor > 0) {
             this._saldo += valor;
             console.log(`Depósito de R$ ${valor.toFixed(2)} realizado com sucesso!`);
