@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>ByteBank</title>
+</head>
+<body>
+    <header class="header_container">
+        <div class="logo">
+            <img src="./img/pngwing.com.png" alt="imagem de saco de dinheito" class="saco_dinheiro">
+            <h1>ByteBank</h1>
+        </div>
+        <p class="titulo_tela">Saque</p>
+        <form class="form_container" id="form">
+            <input type="number" name="agencia" id="agencia" placeholder="Agência" >
+            <input type="number" name="numero" id="numero" placeholder="Número da Conta" >
+            <input type="number" name="valor_desejado" id="valor_desejado" placeholder="Valor Desejado" required>
+            <button type="submit" id="btn_sacar">Sacar</button>
+            <p id="resultado"></p>
+        </form>
+    </header>
+    <script src="./main.js"></script>
+</body>
+</html>
