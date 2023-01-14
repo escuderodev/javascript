@@ -1,12 +1,13 @@
 // realizando importações
-import {Cliente} from "./models/Cliente.js"
-import {ContaCorrente} from "./models/ContaCorrente.js"
-import {ContaPoupanca} from "./models/ContaPoupanca.js";
+import { Cliente } from "./models/Cliente.js"
+import { ContaCorrente } from "./models/ContaCorrente.js"
+import { ContaPoupanca } from "./models/ContaPoupanca.js";
+import { Conta } from "./models/Conta.js";
 
 const cliente1 = new Cliente("Eduardo", 33188942818);
 
-const contaCorrente = new ContaCorrente(1012, cliente1);
-const contaPoupanca = new ContaPoupanca(50, cliente1);
+const contaCorrente = new Conta(1012, cliente1);
+const contaPoupanca = new Conta(50, cliente1);
 
 contaCorrente.deposita(1000);
 
