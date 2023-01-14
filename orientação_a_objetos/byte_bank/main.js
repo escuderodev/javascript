@@ -43,4 +43,8 @@ function validaDados() {
     } else {
         resultado.innerHTML = `Saldo insuficiente!`;
     }
+    
+    document.getElementById('agencia').value = '';
+    document.getElementById('numero').value = '';
+    document.getElementById('valor_desejado').value = '';
 }

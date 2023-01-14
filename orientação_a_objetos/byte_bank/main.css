@@ -36,6 +36,11 @@ body {
   margin-top: 1rem;
 }
 
+.titulo_tela {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
 input {
   padding: 1rem;
   border: none;
@@ -54,7 +59,7 @@ input::placeholder {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 #btn_sacar:hover {
@@ -67,4 +72,5 @@ input::placeholder {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem;
+  height: 3rem;
 }
