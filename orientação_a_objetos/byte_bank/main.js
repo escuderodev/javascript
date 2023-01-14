@@ -1,31 +1,40 @@
-// // realizando importações
-import { Cliente } from "./models/Cliente.js"
-import { ContaCorrente } from "./models/ContaCorrente.js"
+class Conta {
+    constructor(agencia, numero, titular, saldoInicial) {
+        this._agencia = agencia;
+        this._numero = numero;
+        this.titular = titular;
+        this._saldo = saldoInicial;
+    }
+
+    saca(valor) {
+        if (this._saldo >= valor) {
+            this._saldo -= valor;
+            console.log(`Saque de R$ ${valor.toFixed(2)} realizado com sucesso!`);
+        } else {
+            console.log(`Saque não realizado. Saldo insuficiente!`);
+        };
+
+    }
+
+}
 
 const form = document.getElementById('form');
 
-const cliente = new Cliente('Eduardo Escudero', 33188942818);
-const contaCorrente = new ContaCorrente(1012, 850408, cliente, 1000);
+form.addEventListener('submit', function (e) {
 
-
-form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const inputAgencia = document.getElementById('agencia').value; 
-    const inputNumero = document.getElementById('numero').value;
-    const inputValor = parseFloat(document.getElementById('valor_desejado').value);
-
-    if(inputAgencia == contaCorrente.agencia && inputNumero == contaCorrente.numero) {
-        // let valorSacado = contaCorrente.saca(inputValor);
-        console.log(`Saque de R$ ${valorSacado} realizado com sucesso!`);
-    } else {
-        console.log('Conta inválida!')
-    }
-
-    contaCorrente.saca();
-
-    contaCorrente.saca(inputValor);
+    validaDados();
 })
 
-// funções auxiliares
+function validaDados() {
+    const contaCorrente = new Conta(1012, 850408, 'Eduardo', 1000);
 
+    const inputAgencia = document.getElementById('agencia').value;
+    const inputNumero = document.getElementById('numero').value;
+    const inputValor = parseFloat    (document.getElementById('valor_desejado').value);
+
+    console.log(inputAgencia, inputNumero, inputValor);
+
+    contaCorrente.saca(inputValor);
+}
