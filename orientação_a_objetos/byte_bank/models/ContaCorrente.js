@@ -13,14 +13,6 @@ export class ContaCorrente extends Conta {
 
     saca(valor) {
         let taxa = 5;
-        const valorDesejado = valor + taxa;
-
-        if(this._saldo >= valorDesejado) {
-            console.log(`Saque de ${valor.toFixed(2)} realizado com sucesso!`);
-            this._saldo -= valorDesejado;
-        } else {
-            console.log('Saldo insuficiente!');
-        };
+        return this._saca(valor, taxa);
     }
-
 };
