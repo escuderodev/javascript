@@ -6,7 +6,6 @@ export class ContaPoupanca {
         this._numero = numero;
         this.titular = titular;
         this._saldo = saldoInicial;
-        this._saldo = 0;
     }
 
     // métodos de regra de negócio

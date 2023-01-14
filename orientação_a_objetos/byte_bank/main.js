@@ -6,8 +6,8 @@ import { Conta } from "./models/Conta.js";
 
 const cliente1 = new Cliente("Eduardo", 33188942818);
 
-const contaCorrente = new Conta(1012, cliente1, 0);
-const contaPoupanca = new Conta(1022, cliente1 , 50);
+const contaCorrente = new Conta(1012, 850408, cliente1, 0)
+const contaPoupanca = new Conta(1022, 434456, cliente1, 50);
 
 contaCorrente.deposita(1000);
 
