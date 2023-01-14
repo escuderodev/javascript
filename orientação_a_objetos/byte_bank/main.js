@@ -36,5 +36,6 @@ function validaDados() {
 
     console.log(inputAgencia, inputNumero, inputValor);
 
+    const resultado = document.getElementById('resultado');
     contaCorrente.saca(inputValor);
 }
