@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .3);
+    padding: 1.5rem;
+    color: white;
+    border-radius: 10px;
+
+}
+
+h1 {
+    margin: 0 1rem 1rem 1rem;
+}
+
+#name, #idade {
+    padding: .5rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    display: flex;
+    gap: .5rem;
+    margin: 1rem;
+}
+
+.btn_enviar {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: .5rem 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    font-style: 1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: .5s all;
+}
